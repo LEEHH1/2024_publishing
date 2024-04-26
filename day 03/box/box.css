@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+.green {
+  background-color: #1abc9c;
+}
+.greensea {
+  background-color: #16a085;
+}
+.yellow {
+  background-color: #f1c40f;
+}
+.orange {
+  background-color: #f39c12;
+}

@@ -1,0 +1,73 @@
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  width: 500px;
+  height: 100px;
+  gap: 10px;
+}
+.top_1 {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.top_2 {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  gap: 20px;
+}
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.oil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.shopping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.comu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
