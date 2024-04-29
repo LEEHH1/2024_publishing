@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Freesentation-9Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+.card_container {
+  display: flex;
+  gap: 10px;
+  margin: 30px;
+}
+.card {
+  width: 280px;
+  height: 380px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card1 {
+  background-image: url(hotel.jpg);
+}
+
+.card2 {
+  background-image: url(hotel2.jpg);
+}
+
+.card3 {
+  background-image: url(hotel3.jpg);
+}
+
+.card4 {
+  background-image: url(hotel4.jpg);
+}
+
+.head {
+  font-family: "Freesentation-9Black";
+  color: white;
+  font-size: 10px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+.mid {
+  font-family: "Freesentation-9Black";
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  gap: 10px;
+  padding: 10px;
+}
+.btm {
+  font-family: "Freesentation-9Black";
+  color: white;
+  font-size: 10px;
+  margin: 10px;
+}

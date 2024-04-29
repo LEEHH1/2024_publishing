@@ -1,0 +1,25 @@
+.card {
+  width: 280px;
+  height: 380px;
+  border-radius: 12px;
+  background-image: url(../card/hotel.jpg);
+  background-size: cover;
+  padding: 10px 15px 10px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  filter: brightness(1.08);
+}
+
+.category > span {
+  color: white;
+  font-size: 14px;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
