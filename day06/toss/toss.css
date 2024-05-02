@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  width: 1219px;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.toss {
+  display: flex;
+  padding-left: 200px;
+  gap: 3px;
+}
+.icon {
+  color: blue;
+}
+.toss2 {
+  font-weight: bolder;
+}
+
+.text {
+  display: flex;
+  padding-left: 200px;
+  gap: 30px;
+}
+
+.lang {
+  padding-left: 50px;
+}
+
+.bottom {
+  background-image: url(tossbackground.png);
+
+  width: 1219px;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  z-index: 2;
+}
+
+.text3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.text3 > div {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.icons {
+  display: flex;
+  gap: 3px;
+}
+.icon2 {
+  background-color: black;
+  width: 140px;
+  height: 46px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon3 {
+  background-color: black;
+  width: 140px;
+  height: 46px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
