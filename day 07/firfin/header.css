@@ -1,0 +1,36 @@
+header {
+  background-color: var(--color-firfin-01);
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+header > .head {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  font-weight: bolder;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.link {
+  display: flex;
+  font-weight: bold;
+  gap: 10px;
+  font-size: 15px;
+}
+.link > div {
+}
+.link > div:hover {
+  color: white;
+}

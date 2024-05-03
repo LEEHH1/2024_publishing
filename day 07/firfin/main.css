@@ -1,0 +1,89 @@
+main {
+  width: 100vw;
+  height: 780px;
+  background-color: var(--color-firfin-01);
+  display: flex;
+  flex-direction: column;
+  gap: 500px;
+}
+
+main > .first {
+  max-width: var(--max-width);
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  margin: 0 auto;
+}
+.content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.content2 {
+  width: 40%;
+  height: 70%;
+}
+.store {
+  display: flex;
+  gap: 8px;
+  margin-top: 40px;
+}
+.icon {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-weight: bolder;
+  font-size: 50px;
+}
+.text2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.imageBox {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.text2 {
+  margin-top: 40px;
+}
+.gif > img {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  z-index: 1;
+  transform: translate(-30%, 30%);
+}
+
+.img > img {
+  position: absolute;
+  transform: translate(20%, 10%);
+  width: 400px;
+  height: 500px;
+}
+
+main > .second {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--color-orange-01);
+}
