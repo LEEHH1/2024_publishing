@@ -1,0 +1,11 @@
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+main > section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+}
