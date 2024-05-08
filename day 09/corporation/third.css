@@ -1,0 +1,36 @@
+.third {
+  width: 100vw;
+  height: 40vh;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.third__contents {
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.third__contents--bar {
+  color: #666666;
+  display: flex;
+  border-bottom: 1px solid #666666;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.third__contents--info {
+  display: flex;
+  gap: 10px;
+}
+.third__text {
+  color: #666666;
+  margin-top: 20px;
+  font-size: 12px;
+}

@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  .first {
+    max-width: 600px;
+  }
+  .second {
+    max-width: 600px;
+  }
+  .third {
+    max-width: 600px;
+  }
+  .second__contents--container {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .first__contents--title {
+    font-size: 50px;
+  }
+  .first__contents--button {
+    width: 200px;
+    height: 30px;
+  }
+  .first__contents--text {
+    font-size: 10px;
+  }
+  .header__bar--info {
+    display: none;
+  }
+
+  .second {
+    padding-bottom: 100px;
+  }
+
+  .card__title {
+    font-size: 10px;
+  }
+
+  .card__info {
+    font-size: 8px;
+  }
+}
