@@ -1,0 +1,98 @@
+.four {
+  width: 100%;
+  height: 100%;
+  border: 1px solid yellow;
+}
+
+.cardcontainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.four__title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  gap: 50px;
+}
+.four__cardcontainer--card {
+  width: 432px;
+  height: 430px;
+  border: 1px solid #eee;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__info {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.news {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #97c125;
+  margin-bottom: 1.25rem;
+}
+.cardtext {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.date {
+  margin-top: 8rem;
+  font-size: 0.9rem;
+}
+
+.four__botcard {
+  width: 100%;
+  height: 20%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.botcard > img {
+  width: 4rem;
+  height: 4rem;
+  padding-right: 30px;
+}
+.botcard {
+  width: 48.5%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.botcard__text--top {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.botcard__text--bot {
+  font-size: 1rem;
+  color: #000;
+  margin-top: 0.8rem;
+}
+.cardarrow {
+  padding-left: 50px;
+}

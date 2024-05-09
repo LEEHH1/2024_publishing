@@ -1,0 +1,45 @@
+.first {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first__main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+.first__text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.first__text--sta {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #97c125;
+}
+.first__text--heavy {
+  font-size: 4.375rem;
+  font-weight: 700;
+}
+.first__text--mid {
+  font-size: 0.9rem;
+}
+
+.first__text--button {
+  width: 175px;
+  height: 60px;
+  background-color: black;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
