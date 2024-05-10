@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+  .header__bar--menu {
+    display: none;
+  }
+  .headericon {
+    display: block;
+    padding-left: 10px;
+  }
+  .first__main {
+    flex-direction: column;
+  }
+  .first__img > img {
+    display: none;
+  }
+  .first__text {
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+  .first__text--heavy {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  .first__text--mid {
+    font-size: 0.9rem;
+  }
+  .mobilefistimg {
+    display: block;
+  }
+  .mobilefistimg > img {
+    width: 90%;
+    height: 50%;
+    object-fit: contain;
+  }
+  .first__main {
+    max-width: 600px;
+  }
+  .second {
+    max-width: 600px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .second__text {
+    padding-top: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .second__imgbox {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 500px;
+  }
+  .third {
+    max-width: 600px;
+  }
+  .second__imgbox--left {
+    align-items: center;
+  }
+  .second__imgbox--right {
+    align-items: center;
+    margin-top: 80px;
+  }
+  .left--card {
+    padding: 0;
+  }
+}

@@ -5,6 +5,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 
 .second__text--top {
@@ -19,7 +20,7 @@
   width: 840px;
   height: 100%;
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .second__imgbox--left {
   display: flex;
@@ -40,10 +41,17 @@
   padding: 0 2.5rem;
   position: relative;
 }
-.left--card > img {
+.left--card--img {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 44px;
+}
+.left--card > .left--card--img > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.5;
 }
 
 .button {

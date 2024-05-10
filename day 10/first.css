@@ -1,16 +1,16 @@
 .first {
-  width: 100%;
-  height: 100%;
-  border: 1px solid red;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  /* margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 .first__main {
+  max-width: 1400px;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   padding-top: 50px;
@@ -18,7 +18,7 @@
 .first__text {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
 }
 .first__text--sta {
   font-size: 1rem;
@@ -37,9 +37,24 @@
   width: 175px;
   height: 60px;
   background-color: black;
-  border-radius: 100px;
+  border-radius: 200px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.arrow {
+  display: 100%;
+  max-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+}
+.arrow > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mobilefistimg {
+  display: none;
 }
