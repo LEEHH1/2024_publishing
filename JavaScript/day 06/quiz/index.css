@@ -1,0 +1,47 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: pink;
+}
+
+.boxSize1 {
+  width: 100px;
+  height: 100px;
+}
+.boxSize2 {
+  width: 200px;
+  height: 200px;
+}
+.boxSize3 {
+  width: 300px;
+  height: 300px;
+}
+.boxSize4 {
+  width: 400px;
+  height: 400px;
+}
+.boxSize5 {
+  width: 500px;
+  height: 500px;
+}
+
+.boderRadi1 {
+  border-radius: 10px;
+}
+.boderRadi2 {
+  border-radius: 30px;
+}
+.boderRadi3 {
+  border-radius: 50px;
+}
