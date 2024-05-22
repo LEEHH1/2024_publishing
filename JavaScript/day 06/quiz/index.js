@@ -9,29 +9,35 @@ const divBox = document.querySelector(".box");
 
 colorArr.forEach((v) => {
   const colorBtn = document.createElement("button");
-  document.body.appendChild(colorBtn);
   colorBtn.innerText = v;
-  colorBtn.addEventListener("mouseover", () => {
-    divBox.classList.toggle(v);
+  colorBtn.addEventListener("click", () => {
+    colorArr.forEach((v) => divBox.classList.remove(v));
+    divBox.classList.add(v);
   });
+  const colorBtnList = document.querySelector(".colorBtnList");
+  colorBtnList.appendChild(colorBtn);
 });
 
 sizeArr.forEach((v) => {
   const sizeBtn = document.createElement("button");
-  document.body.appendChild(sizeBtn);
   sizeBtn.innerText = v;
   sizeBtn.addEventListener("click", () => {
-    divBox.classList.toggle(v);
+    sizeArr.forEach((v) => divBox.classList.remove(v));
+    divBox.classList.add(v);
   });
+  const sizeBtnList = document.querySelector(".sizeBtnList");
+  sizeBtnList.appendChild(sizeBtn);
 });
 
 borderArr.forEach((v) => {
   const borderBtn = document.createElement("button");
-  document.body.appendChild(borderBtn);
   borderBtn.innerText = v;
   borderBtn.addEventListener("click", () => {
-    divBox.classList.toggle(v);
+    borderArr.forEach((v) => divBox.classList.remove(v));
+    divBox.classList.add(v);
   });
+  const borderBtnList = document.querySelector(".borderBtnList");
+  borderBtnList.appendChild(borderBtn);
 });
 
 //-------------------------------------------------------------------------------
