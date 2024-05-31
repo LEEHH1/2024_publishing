@@ -6,6 +6,32 @@
   margin: 0 auto;
   justify-content: flex-start;
 }
+
+.search {
+  cursor: pointer;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(255, 84, 15);
+  border-radius: 100px;
+  padding: 7px;
+}
+.search > input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  border-width: 0px;
+  padding: 0px 0px 0px 13px;
+  margin: 0px;
+  width: calc(100% - 20px);
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
 .card {
   width: 548px;
   height: 103px;

@@ -1,0 +1,176 @@
+.main {
+  width: 100vw;
+  height: 100vw;
+}
+
+.headCard {
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+  border: 1px solid black;
+  margin: 0 auto;
+
+  display: grid;
+  cursor: pointer;
+  background-color: rgb(227, 229, 236);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(100% - 26px);
+  background-color: rgb(255, 255, 255);
+
+  margin: 0 auto;
+}
+.cardText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 12px 0px 0px;
+}
+.cardTextPrice {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+}
+.free {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  gap: 12px;
+  border-radius: 10px;
+  background-color: rgb(241, 243, 246);
+  max-width: 742px;
+  margin: 12px;
+}
+.cardMain {
+  display: flex;
+
+  gap: 12px;
+  width: 100%;
+}
+.cardImg {
+  width: 100%;
+  height: 204px;
+  max-width: 360px;
+}
+.cardImg > img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+}
+
+.cardTextMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.gradeIcon {
+  font-size: 12px;
+  color: yellow;
+  margin-right: 5px;
+}
+.grade {
+  display: flex;
+}
+
+.programBox {
+  display: flex;
+}
+.serviceBox {
+  display: flex;
+}
+.program {
+  color: rgb(153, 159, 169);
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.service {
+  color: rgb(153, 159, 169);
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.tag {
+  color: rgb(153, 159, 169);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.grade {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: rgb(255, 197, 0);
+}
+.address {
+  color: rgb(153, 159, 169);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.daily {
+  background-color: rgb(234, 238, 255);
+  padding: 3px 6px;
+  border-radius: 4px;
+
+  color: rgb(84, 103, 245);
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.pricePercent {
+  color: rgb(255, 85, 85);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.programData {
+  color: rgb(61, 65, 73);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.serviceData {
+  color: rgb(61, 65, 73);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.priceNum {
+  color: rgb(61, 65, 73);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.month {
+  color: rgb(61, 65, 73);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}

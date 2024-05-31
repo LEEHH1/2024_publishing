@@ -3,6 +3,7 @@ import { data } from "./data.js";
 //data.pageProps.events.
 const box = document.querySelector(".box");
 const cardData = data.pageProps.events;
+
 function koreaPrice(num) {
   const won = num / 10000;
   return won % 1 === 0 ? won + "만원" : won.toFixed(1) + "만원";
@@ -31,3 +32,22 @@ const makeCard = (data) =>
 </div>
   `;
 cardData.forEach((v) => box.insertAdjacentHTML("beforeend", makeCard(v)));
+const input = document.querySelector(".searchInput");
+input.addEventListener("keyup", (e) => {
+  const searchTerm = e.target.value;
+
+  if (e.keyCode == 13) {
+    box.innerHTML = "";
+    cardData
+      .filter(
+        (v) =>
+          v.title.toLowerCase().includes(searchTerm) ||
+          v.treatmentList.some((treatment) =>
+            treatment.toLowerCase().includes(searchTerm)
+          ) ||
+          v.hospitalSubway.toLowerCase().includes(searchTerm) ||
+          v.hospitalName.toLowerCase().includes(searchTerm)
+      )
+      .forEach((v) => box.insertAdjacentHTML("beforeend", makeCard(v)));
+  }
+});
