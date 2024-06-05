@@ -1,13 +1,22 @@
-const timer = document.querySelector(".timer");
-let timeLeft = 15;
+let timerInterval;
 
-const timerNum = function () {
-  if (timeLeft > 0) {
-    timer.innerText = timeLeft--;
-  } else {
-    timer.innerText = 0;
-    clearInterval(count);
-  }
-};
+export function timerNum() {
+  let timeLeft = 15; // 여기서 시간을 정의합니다.
+  const timer = document.querySelector(".timer");
 
-export const count = setInterval(timerNum, 1000);
+  timerInterval = setInterval(() => {
+    timer.innerText = timeLeft;
+    --timeLeft;
+    if (timeLeft === 0) {
+      timer.innerText = 0;
+      clearInterval(timerInterval);
+      createBoard();
+    }
+  }, 1000);
+}
+
+export function resetTimer() {
+  clearInterval(timerInterval);
+  timerNum();
+}
+timerNum();

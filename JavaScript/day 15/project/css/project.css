@@ -29,10 +29,10 @@
 }
 .gameBoard {
   display: grid;
-    gap: 5px;
-    margin: 20px auto;
-    width: 90vw;
-    max-width: 600px;
+  gap: 5px;
+  margin: 20px auto;
+  width: 90vw;
+  max-width: 600px;
 }
 .tile {
   width: 100%;
@@ -46,4 +46,7 @@
   right: 0;
   bottom: 0;
   cursor: pointer;
+}
+.stage {
+  display: flex;
 }
