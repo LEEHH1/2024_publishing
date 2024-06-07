@@ -1,0 +1,20 @@
+TypeScript
+React : 6월 20일
+AngularJS : MVC <-> React : V
+Next.js : ?
+
+Java : 3일
+DB : 5일
+Spring-Boot : 10일
+AWS or Azure : 
+
+
+Node.js & TypeScript
+
+Node.js 는 컴퓨터에 JavaScript를 실행할  수 있게 해주는 프로그램
+원래 JavaScript는 웹 브라우저에서만 동작했지만 Node.js 덕분에
+컴퓨터에서도 JavaScript를 사용할 수 있게 됐다.
+이를 통해 서버 측에서 JavaScript를 사용하여 다양한 애플리케이션을 개발할수 있다
+https://nodejs.org/en
+
+. npm : Node.js의 패키지 관리자(npm)를 통해 다양한 모듈과 라이브러리를 손쉽게 설치하고 관리할 수 있습니다.
