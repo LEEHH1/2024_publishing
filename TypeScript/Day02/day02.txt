@@ -1,0 +1,91 @@
+TypeScript란 무엇인가
+
+TypeScript는 JavaScript의 슈퍼셋 으로 , JavaScript의 모든 기능을 포함하면서도 추가적인 기능을
+제공합니다. 이는 개발자들이 더 안전하고 효율적으로 코드를 작성할 수 있도록 돕습니다.
+
+1.자바스크립트의 한계
+  대규모 프로젝트에서의 유지보수 어려움: 코드의 규모가 커질수록 변수와 함수의 타입을 추적하기
+  어려워 집니다. 이는 유지보수와 디버깅을 어렵게 만듭니다.
+2. 슈퍼셋
+TypeScript는 JavaScript의 이러한 한계를 극복하기 위해 설계된 "슈퍼셋"입니다. 즉, JavaScript의
+모든 기능을 포함하면서도 추가적인 기능을 제공합니다.
+    정적타입 지정: TypeScript는 정적 타입 지정을 통해 변수와 함수의 타입을 명확하게 정의합니다.
+    이는 컴파일 단계에서 오류를 사전에 방지할 수 있도록 도와줍니다.
+
+    더 나은 개발 도구 지원 : TypeScript는 코드 에디터와 통합되어 강력한 코드 가이드와 자동 완성
+    기능을 제공합니다. 이는 개발자의 생산성을 크게 향상시킵니다.
+
+ts-node
+ts-node는 TypeScript 코드를 실행할 수 있게 해주는 도구 입니다.
+
+Bash
+cd(change directory): 위치 바꾸기 ex) cd Day01 or cd..
+ls(list) : 현재 위치에서 모든 파일 나타내기 ex)ls
+mkdir(make directory) : 현재 위치에서 폴더 만들기 ex) mkdir happy -> happy 폴더 생성
+
+node hello.js : hello.js 파일 실행하기
+ts-node hello.ts : hello.ts 파일 실행하기
+tsc hello.ts : hello.ts -> hellor.js로 컴파일 하기
+npx tsc --init : 현재 위치에서 타입스크립트 초기화 하기
+
+변수와 함수의 타입 정의
+TypeScript는 변수와 함수의 타입을 명확하게 정의할 수 있도록 지원합니다.[타입어노테이션]
+
+const name : string = "alice"
+const age: number = 25;
+const isStudent: boolean = true;
+const person: object = {name:"alice", age : 25};
+const scores: number[] = [90,85,88];
+const data: any = "Hello";
+
+function add(a:number, b: number): number{
+    return a + b;
+}
+//옵셔널 파라메터 함수
+
+function greet(name: stirng, greeting? : string): string{
+    return greeting? `${greeting},${name}!` : `Hello,${name}!`;
+}
+
+
+Union, Intersection, Type Alias
+Union 타입은 두개 이상의 타입을 하나로 결합하는 것을 의미합니다.
+Intersection 타입은 여러 타입을 결합하여 하나의 타입을 만드는것을 의미합니다.
+
+Type Alias는 타입을 커스터마이징해주는 역할
+
+
+
+Index Signature & Optional
+
+TypeScript에서 Index Signature는 객체의 동적 속성을 정의하는 방법을 제공합니다.
+이는 객체의 키가 사전에 정의되지 않은 경우에도 해당 키와 값의 타입을 지정할 수 있게해줍니다.
+
+TypeScript에서 Optional 타입은 객체의 속성 또는 함수의 매개변수가 선택적일 수 있음을
+나타냅니다.
+
+Keyof 연산자는 오브젝트 타입에서 키들의 합을 얻는 연산자입니다.
+
+
+type Unit = {
+  [key: string]: string | number | null | undefined;
+  hp: number;
+  name: string;
+  pet?: string;
+};
+
+
+const makeMsgAlign = (msg: string, align: "center" | "start" | "end") => {
+  const span = document.createElement("span");
+  span.innerText = msg;
+  span.style.textAlign = align;
+  return span;
+};
+
+type Bread = {
+  name: string;
+  price: number;
+};
+
+type keyofTypeBread = keyof Bread; // 'name' | 'price'
+const apple: keyofTypeBread = "price";
