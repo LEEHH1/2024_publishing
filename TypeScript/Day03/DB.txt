@@ -1,0 +1,46 @@
+Database 유래
+
+Outline
+초기 컴퓨터는 데이터를 저장하기 위해 텍스트 파일이나 이진 파일로 데이터저장,
+그러나 문제가 많았습니다. 데이터 중복,보안,접근 속도에 한계가 생기가 되었으며,
+이로 인해서 1960년대 후반에 데이터베이스가 등장하게 됐습니다.
+
+Core Theory
+
+DB(Database): 데이터를 저장하는 물리적인 공간
+DBMS(Database Management System) : 데이터를 체계적으로 저장하고 관리할 수 있는 소프트웨어 시스템
+
+
+
+
+
+
+DBMS
+
+Outline
+여러 종류의 DBMS가 개발되어, 대표적으로 MySQL,Oracle,MongoDB 가 있습니다.
+
+Core Theory
+1. 관계형 데이터베이스(Relational Database)
+관계형 데이터베이스는 데이터를 테이블 형태로 저장합니다. 각 테이블은 행과 열로 구성되며,
+데이터를 구조적으로 관리할 수 있습니다.가장 널리 사용되는 데이터베이스 유형 중 하나입니다.
+SQL: Structured Query Language
+
+ SQL
+  이름  결제방법  좌석  발권수단
+  김타입  카카오  b1    모바일
+  이타입  네이버  h4    키오스크
+
+Structured(구조화된) : 위의 데이터베이스 내용 한에서 적절한 질문구조 유지
+Query(질문) : 결제 방법이 네이버이고, 발권 수단이 키오스크인 사람들,성이 김씨이고, j열에 앉은 사람들
+
+
+2. 비관계형 데이터베이스(Not Only SQL Database)
+ 2-1 객체지향 데이터베이스(object-Oriented Database)
+    db4o, objectDB
+ 2-2 그래프 데이터베이스(Graph Database)
+     Neo4j, ArangoDB, OrientDB
+
+데이터 베이스 선택기준
+각 데이터베이스는 고유의 장점과 특징을 가지고 있으며, 특정한 사용 사레에 맞게 선택해야 합니다.
+

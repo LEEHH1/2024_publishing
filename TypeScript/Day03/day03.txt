@@ -1,0 +1,84 @@
+Interface
+
+Outline
+TypeScript에서 인터페이스는 "객체의 구조를 정의" 하는 방법중 하나이다.
+인터페이스는 객체가 가져야 할 속성과 해당 속성의 타입을명시적으로 지정하여,
+코드의 명확성을 높이고 오류를 방지할 수 있습니다.
+
+Core Theory
+
+interface Fruit {
+  name: string;
+  kcal: number;
+}
+interface Tropical {
+  tempaerature: number;
+}
+interface TropicalFruit extends Fruit, Tropical {
+  sugarLevel: number;
+}
+
+const Mango: TropicalFruit = {
+  name: "망고",
+  kcal: 100,
+  sugarLevel: 5,
+  tempaerature: 50,
+};
+
+
+Enumeration
+
+Outline
+TypeScript에서 이넘(Enumeration)은 "특정 값들의 집합에 이름을 부여" 하는 방식입니다.
+enum은 관련된 상수들의 집합을 정의하는데 사용되며, 각 상수는 숫자 또는 문자열값과
+연관될 수 있습니다. enum을 사용하면 코드의 가독성과 유지보수성을 높일 수 있습니다.
+
+Core Theory
+
+enum Direction {
+  East,
+  West,
+  South,
+  North,
+}
+
+enum HttpStatus {
+  Ok,
+  NotFound,
+}
+const resonse: HttpStatus = HttpStatus.Ok;
+
+enum Status {
+  Pending,
+  InProgress,
+  Completed,
+  Failed,
+}
+
+const getStatus = (status: Status): string => {
+  switch (status) {
+    case Status.Pending:
+      return "작업 대기중";
+    case Status.InProgress:
+      return "작업 진행 중";
+    case Status.Completed:
+      return "작업 완료";
+    case Status.Failed:
+      return "작업 실패";
+    default:
+      return "알수 없는 상태";
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
